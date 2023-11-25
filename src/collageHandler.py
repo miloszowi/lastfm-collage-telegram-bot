@@ -21,7 +21,7 @@ async def handle(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             "rowNum": 3,
             "showName": "true",
             "type": "albums",
-            "username": "miloszowi"
+            "username": username
         },
         headers={
             "content-type": "application/json;charset=UTF-8"
