@@ -11,7 +11,6 @@ class App:
     app: Application
 
     def run(self) -> None:
-        print(os.getenv('BOT_TOKEN'))
         self.app = ApplicationBuilder().token(os.getenv('BOT_TOKEN')).build()
 
         self.app.add_handler(InlineQueryHandler(collageHandler.handle))
